@@ -76,6 +76,9 @@ li {
 #contact,
 footer {
   padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*
@@ -146,9 +149,10 @@ Contact Section
 form {
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 input,
@@ -178,4 +182,65 @@ footer {
 
 .footer__link {
   padding: 0 16px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 728px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .home__description {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__img--wrapper {
+    max-width: 240px;
+  }
+
+  h1 {
+    align-items: center;
+    font-size: 60px;
+  }
+
+  .subheader {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .section__description {
+    flex-direction: column;
+  }
+
+  .section__description--wrapper {
+    width: 100%;
+  }
+
+  #discord .section__description {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    padding: 48px 24px;
+  }
+
+  .footer__logo {
+    max-width: 360px;
+  }
+
+  .footer__link {
+    padding: 0 4px;
+    font-size: 18px;
+  }
+
+  .footer__link {
+    margin-bottom: 24px;
+  }
 }
